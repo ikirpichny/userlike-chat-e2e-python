@@ -27,9 +27,9 @@ def test_chat_scenario(operator_page, customer_page):
     # check http responce after sending message form customer
     customer_response = customer_page.wait_for_response('https://api.userlike.com/api/um/chat/handle/')
     if customer_response.status() == 200:
-        print('HTTP-ответ успешен (статус 200 OK).')
+        print('http status 200 OK')
     else:
-        print('Неверный статус: ' + str(customer_response.status()))
+        print('wrong status: ' + str(customer_response.status()))
 
     # check operator
     operator_page.locator('text=Live (1)').wait_for_element_state('visible')
