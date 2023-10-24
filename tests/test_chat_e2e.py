@@ -7,9 +7,9 @@ def test_chat_scenario(operator_page, customer_page):
     operator_page.goto('https://www.userlike.com/')
     operator_page.locator('[data-test-id="button-to-login"]').click()
     operator_page.locator('[data-test-id="login-username-input"]').click()
-    operator_page.locator('[data-test-id="login-username-input"]').fill('ilia.kirpichny@gmail.com')
+    operator_page.locator('[data-test-id="login-username-input"]').fill('*****')
     operator_page.locator('[data-test-id="login-password-input"]').click()
-    operator_page.locator('[data-test-id="login-password-input"]').fill('tfh0mfw_mcd8NDT@pnw')
+    operator_page.locator('[data-test-id="login-password-input"]').fill('*****')
     operator_page.locator('[data-test-id="button-to-submit-login-form"]').click()
     operator_page.locator('a:has-text("Message Center")').click()
 
